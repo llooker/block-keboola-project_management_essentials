@@ -1,10 +1,4 @@
-include: "//@{CONFIG_PROJECT_NAME}/project.view"
-
 view: project {
-  extends: [project_config]
-}
-
-view: project_core {
   sql_table_name: @{SCHEMA_NAME}.PROJECT ;;
   drill_fields: [project_id]
 

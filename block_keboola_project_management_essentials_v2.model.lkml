@@ -43,19 +43,10 @@ connection: "@{CONNECTION}"
 
 label: "Block Keboola Project Management Essentials"
 
-include: "*.view"
-include: "*.explore.lkml"
-include: "*.dashboard.lookml"
-include: "//@{CONFIG_PROJECT_NAME}/*.view.lkml"
-include: "//@{CONFIG_PROJECT_NAME}/*.model.lkml"
-include: "//@{CONFIG_PROJECT_NAME}/*.dashboard.lkml"
+## Include Explrores
+include: "/explores/project.explore"
+include: "/explores/user.explore"
 
-explore: project {
-  label: "Projects & Tasks"
-  extends: [project_config]
-}
-
-explore: user {
-  label: "Member/Follower"
-  extends: [user_config]
-}
+## Include Dashboards
+include: "/dashboards/overview.dashboard.lookml"
+include: "/dashboards/users__tasks_activity.dashboard.lookml"

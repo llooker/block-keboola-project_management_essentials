@@ -1,10 +1,4 @@
-include: "//@{CONFIG_PROJECT_NAME}/member.view"
-
 view: member {
-  extends: [member_config]
-}
-
-view: member_core {
   sql_table_name: @{SCHEMA_NAME}."USER" ;;
 
   dimension: user_id {

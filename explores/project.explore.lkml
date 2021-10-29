@@ -1,6 +1,17 @@
-explore: project_core {
-  hidden: yes
-  extension: required
+include: "/views/project.view"
+include: "/views/project_member.view"
+include: "/views/member.view"
+include: "/views/project_snapshot.view"
+include: "/views/task.view"
+include: "/views/task_follower.view"
+include: "/views/follower.view"
+include: "/views/task_tag.view"
+include: "/views/task_custom_field.view"
+include: "/views/task_event.view"
+include: "/views/task_snapshot.view"
+
+explore: project {
+  label: "Projects & Tasks"
 
   join: project_member {
     type: left_outer
