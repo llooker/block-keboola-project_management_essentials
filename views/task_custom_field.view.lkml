@@ -1,10 +1,4 @@
-include: "//@{CONFIG_PROJECT_NAME}/task_custom_field.view"
-
 view: task_custom_field {
-  extends: [task_custom_field_config]
-}
-
-view: task_custom_field_core {
   sql_table_name: @{SCHEMA_NAME}.TASK_CUSTOM_FIELD ;;
   drill_fields: [task_custom_field_id]
 
